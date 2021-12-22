@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  width: 415px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid rgb(221, 221, 221);
   min-height: 100vh;
+}
+
+@media (max-width: 415px) {
+  .app {
+    width: 100%;
+  }
+}
+
+.brand {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.nav {
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+  display: inline-block;
+  flex: 1 1 0;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item:not(:last-child) {
+  border-right: 1px solid rgb(221, 221, 221);
+}
+
+.section {
+  padding: 30px;
+}
+
+.section-title {
+  margin-top: 0;
+}
+
+.section-description {
+  line-height: 26px;
+}
+
+.articles {
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+.article {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 20px 0;
+}
+
+.article-title {
+  margin-top: 0;
+}
+
+.article-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.article-title a:hover {
+  color: rgb(51, 51, 207);
+}
+
+.article-time {
+  color: #999;
+  font-size: 12px;
+}
+
+.article-image {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+.article-summary {
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.article-source {
+  color: #999;
+}
+
+.article-source a {
+  text-decoration: none;
 }
